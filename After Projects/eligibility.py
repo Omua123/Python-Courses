@@ -1,8 +1,8 @@
-age = int (input("Enter age to check eligibility: "))
-print ("Age to be checked:", age)
+attended = int (input("Enter the number of days you attended: "))
+absent = int (input("Enter the number of days you ere absent: "))
 
-if age>= 18:
-    print ("You are eligible")
+if attended / absent+attended >= 0.75:
+    print ("You are eligible to take the exam")
 
 else:
-    print ("You are not eligible")
+    print ("You are not eligible to take the exam")
